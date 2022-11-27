@@ -10,7 +10,7 @@ const errorMsg = document.getElementById("error");
 
 
 let productsArray = [];
-productsArray = JSON.parse(localStorage.getItem("products"));
+// productsArray = JSON.parse(localStorage.getItem("products"));
 displayProducts(productsArray);
 
 
