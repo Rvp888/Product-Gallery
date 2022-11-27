@@ -10,7 +10,7 @@ const errorMsg = document.getElementById("error");
 
 
 let productsArray = [];
-productsArray = JSON.parse(localStorage.getItem("products"));
+// productsArray = JSON.parse(localStorage.getItem("products"));
 displayProducts(productsArray);
 
 
@@ -40,7 +40,7 @@ addButton.addEventListener("click", () => {
         id: Date.now()
     })
 
-    localStorage.setItem("products",JSON.stringify(productsArray));
+    // localStorage.setItem("products",JSON.stringify(productsArray));
     displayProducts(productsArray);
 
     urlInput.value = "";
