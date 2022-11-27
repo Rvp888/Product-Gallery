@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Product Gallery</h1>
+    <h3>Add Product</h3>
+
+    <form id="product-form">
+
+        <label for="url-input">Enter Image URL</label>
+        <input type="text" name="url-input" id="url-input" placeholder="Image URL..." required>
+
+        <label for="type-select">Select Type</label>
+        <select name="type-select" id="type-select">
+            <option value="Headphones">Headphones</option>
+            <option value="Laptops">Laptops</option>
+            <option value="Mobiles">Mobiles</option>
+        </select>
+
+        <button type="submit" id="add-btn">Add</button>
+        
+        
+    </form>
+
+    <P id="error"></P>
+
+    <div id="filter-div">
+        <button id="All">All</button>
+        <button id="Headphones">Headphones</button>
+        <button id="Laptops">Laptops</button>
+        <button id="Mobiles">Mobiles</button>
+    </div>
+
+    <div id="products-div"></div>
+    
+
+</body>
+</html>
