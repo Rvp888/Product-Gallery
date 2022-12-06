@@ -14,6 +14,9 @@ productsArray = JSON.parse(localStorage.getItem("products"));
 displayProducts(productsArray);
 
 
+console.log(typeSelect.getAttribute("name"));
+console.log(filterDiv.matches("width"));
+
 
 /*================== Adding New Product Elements in an Array ===============================================================*/
 
@@ -90,9 +93,8 @@ filterDiv.addEventListener("click",(event) => {
 productsDiv.addEventListener("click",(event) => {
     if (event.target.id == "delete-btn"){
         let item = event.target.parentElement;
-        productsArray.forEach((product) => {
+        productsArray.forEach((product,index) => {
             if (product.id == item.id){
-                let index = productsArray.indexOf(product);
                 productsArray.splice(index,1);
             }
         })
